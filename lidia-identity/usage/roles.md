@@ -198,7 +198,7 @@ Remove Role
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint allows you to remove roles.
 {% endapi-method-description %}
 
 {% api-method-spec %}
