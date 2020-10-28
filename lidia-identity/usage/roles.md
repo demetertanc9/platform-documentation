@@ -198,17 +198,27 @@ Remove Role
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint allows you to remove roles.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-form-data-parameters %}
+{% api-method-parameter name="ClientId" type="string" required=true %}
+Identifies the client \(your application\). By using this parameter we know who is calling our API function.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="AppKey" type="string" required=true %}
+This is your unique application key \(or application secret you might have seen on other API documents\) which we provide you once your are successful subscribed to Lidia Identity.
+{% endapi-method-parameter %}
+
 
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+
+{% api-method-parameter name="RoleId" type="integer" required=true %}
+
+{% endapi-method-parameter %}
+
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
